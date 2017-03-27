@@ -24,9 +24,7 @@ public class Challenge4 {
         int count = 0;
         for (int j = 0; j < n - 1; j++) {
             for (int k = j + 1; k < n; k++) {
-
             }
-
         }
 
     }
