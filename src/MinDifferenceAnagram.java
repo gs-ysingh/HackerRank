@@ -41,13 +41,17 @@ public class MinDifferenceAnagram {
         char[] B = str2.toCharArray();
 
         int[] diffs = new int['z' - 'a' + 1];
+
         for(char c : A){
             diffs[c - 'a']++;
         }
+
         for(char c : B){
             diffs[c - 'a']--;
         }
+
         int sum = 0;
+
         for(int diff : diffs) {
             sum += (diff < 0) ? - diff : diff;
         }
